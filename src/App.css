@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  background: #000000;
+}
+
+.wrapper {
+  width: 50%;
+  height: 790px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem;
+  gap: 1rem;
+}
+
+.wrapper > h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 5rem;
+  color: white;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.input-style {
+  height: 3rem;
+  border-bottom: 1.5px solid white;
+}
+
+.error {
+  color: #ff4f4f;
+}
+
+.success {
+  color: #7ecd71;
+}
+
+.wrapper input {
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  outline: none;
+  background-color: #000000;
+  color: white;
+}
+
+.submit-btn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2rem;
+  width: max-content !important;
+  color: black !important;
+  background-color: white !important;
+  border: 0px;
+  cursor: pointer;
+  padding: 0rem 1rem;
+}
+
+.text-style {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1000px), (max-height: 750px) {
+  .wrapper {
+    width: 100%;
+    height: max-content;
+    padding: 0rem 1rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .submit-btn {
+    font-size: 1rem;
+  }
+
+  .text-style {
+    font-size: 1rem;
+  }
+}
